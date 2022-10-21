@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitsa</title>
+    <!-- bootsrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+
+  <body>
+    <div class="modal-success">
+      <div class="modal-success-card">
+        <img src="images/check.jpg" alt="success">
+        <p>Buyurtmangiz qabul qilindi!</p>
+      </div>
+    </div>
+    <div class="modal-danger">
+      <div class="modal-danger-card">
+        <img src="images/danger.jpg" alt="danger">
+        <p>Buyurtma qilish uchun ma'lumot yetarli emas!</p>
+      </div>
+    </div>
+    <header>
+      <div class="container">
+        <!-- ===== navbar ===== -->
+        <nav class="navbar">
+          <!-- navbar logo -->
+          <a class="navbar__logo" href="index.html">
+            <img class="navbar__logo-img" src="images/pizza-logo-icon.png" alt="logo">
+            <h1 class="navbar__logo-title">Pizza</h1>
+          </a>
+          <!-- navbar menu -->
+          <ul class="navbar__list d-flex between">
+            <li class="navbar__list__item">
+              <a class="navbar__list__item-link" href="./index.html">bosh sahifa</a>
+            </li>
+            <li class="navbar__list__item">
+              <a class="navbar__list__item-link" href="#">biz haqimizda</a>
+            </li>
+            <li class="navbar__list__item">
+              <a class="navbar__list__item-link active-color" href="#">buyurtma berish</a>
+            </li>
+            <li class="navbar__list__item">
+              <a class="navbar__list__item-call" href="tel:998996874210">+998(99)-687-42-10</a>
+            </li>
+          </ul>
+          <!-- mobile navbar -->
+          <ul class="navbar-mobile__list d-none">
+            <li class="navbar-mobile__list__item">
+              <a class="navbar-mobile__list__item-link" href="#">bosh sahifa</a>
+            </li>
+            <li class="navbar-mobile__list__item">
+              <a class="navbar-mobile__list__item-link" href="#">biz haqimizda</a>
+            </li>
+            <li class="navbar-mobile__list__item">
+              <a class="navbar-mobile__list__item-link" href="#">buyurtma berish</a>
+            </li>
+          </ul>
+          <button class="btn btn-nav">
+            <i class="bi bi-list"></i>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="order">
+        <div class="container">
+          <h2 class="order-title">Pitsa buyurtma qilish</h2>
+          <div class="order__wrapper">
+            <div class="order__wrapper__left">
+              <form action="#">
+                <label for="select">
+                  <span class="request">Noni qanday bo'lsin?</span>
+                  <select name="select" id="select">
+                    <option class=".span-ust" value="yupqa" >Yupqa</option>
+                    <option class=".span-ust" value="o'rtacha">O'rtacha</option>
+                    <option class=".span-ust" value="qalin">Qalin</option>
+                  </select>
+                </label>
+              </form>
+              <div class="size">
+                <strong class="size-title">Kattaligi</strong>
+                <button class="btn-size">25 cm</button>
+                <button class="btn-size">30 cm</button>
+                <button class="btn-size">35 cm</button>
+              </div>
+  
+              <div class="check">
+                <strong class="check-title">Ustiga nima solaylik?</strong>
+                <div class="check-form">
+                  <div class="check-form-left">
+                    <form action="#">
+                      <label for="pomidor">
+                        <input type="checkbox" name="pomidor">
+                        <span>Pomidor</span>
+                      </label>
+                      <label for="kurka">
+                        <input type="checkbox" name="kurka">
+                        <span>Kurka go'shti</span>
+                      </label>
+                      <label for="zaytun">
+                        <input type="checkbox" name="zaytun">
+                        <span>Zaytun</span>
+                      </label>
+                    </form>
+                  </div>
+                  <div class="check-form-right">
+                    <form action="#">
+                      <label for="bodiring">
+                        <input type="checkbox" name="bodiring">
+                        <span>Tuzlangan bodiring</span>
+                      </label>
+                      
+                      <label for="quziqorin">
+                        <input type="checkbox" name="quziqorin">
+                        <span>Qo'ziqorin</span>
+                      </label>
+                      
+                      <label for="qazi">
+                        <input type="checkbox" name="qazi">
+                        <span>Qazi</span>
+                      </label>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="check">
+                <strong class="check-title">Qo'shimchalar</strong>
+                <div class="check-form">
+                  <div class="check-form-left">
+                    <form action="#">
+                      <label for="achchiq">
+                        <input type="checkbox" name="achchiq">
+                        <span>Achchiq</span>
+                      </label>
+                    </form>
+                  </div>
+                  <div class="check-form-right">
+                    <form action="#">
+                      
+                      <label for="sosiskali">
+                        <input type="checkbox" name="sosiskali">
+                        <span>Sosiskali</span>
+                      </label>
+                    </form>
+                  </div>
+                </div>
+              </div>  
+            </div>
+            <div class="order__wrapper__right">
+
+              <div class="right_type">
+                <strong >Non: <span class="non" style="font-weight: 400;"></span></strong> 
+              </div>
+              <div class="right-size">
+                <strong>Kattaligi: <span></span></strong>
+              </div>
+              <div class="right-composition">
+                <strong>Ustida: <span></span></strong>
+              </div>
+              <div class="right-addition">
+                <strong>Qo'shimcha: <span></span></strong>
+              </div>
+              <button class="right-btn">Buyurtma berish</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="address">
+        <div class="container">
+          <div class="address">
+            <h3 class="address-title">Bizning manzillarimiz!</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11993.057182444636!2d69.18382376432419!3d41.2813520454068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b8ec0e4e4a3%3A0x3727282753417b04!2sBellissimo%20Pizza!5e0!3m2!1sru!2s!4v1666310973052!5m2!1sru!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        
+        <div class="footer-nav">
+          <a href="./index.html" class="footer-nav__logo">
+            <img class="footer-nav__logo-img navbar__logo-img" src="images/pizza-logo-icon.png" alt="logo">
+            <h3 class="footer-nav__logo-title navbar__logo-title">Pizza</h3>
+          </a>
+          <ul class="footer-nav-list">
+            <li class="footer-nav-list-item">
+              <a href="#" class="footer-nav-list-item-link">Telegram</a>
+            </li>
+            <li class="footer-nav-list-item">
+              <a href="#" class="footer-nav-list-item-link">Instagram</a>
+            </li>
+            <li class="footer-nav-list-item">
+              <a href="#" class="footer-nav-list-item-link">Twitter</a>
+            </li>
+          </ul>
+        </div>
+        <div class="line"></div>
+        <div class="copy">
+          &copy;Copyright 2022
+        </div>
+      </div>
+    </footer>
+    <script src="./js/pulign.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+
+</html>

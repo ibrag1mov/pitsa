@@ -1,0 +1,36 @@
+$media-desktop: "only screen and (max-width: 1200px)";
+$media-large-tablet: "only screen and (max-width: 992px)";
+$media-small-tablet: "only screen and (max-width: 768px)";
+$media-mobile: "only screen and (max-width: 576px)";
+$media-mobile-sm: "only screen and (max-width: 375px)";
+
+
+
+// @media #{$media-desktop}{
+//   body{
+//     background: teal;
+//   }
+// }//desktop
+
+// @media #{$media-large-tablet}{
+//   body{
+//     background: teal;
+//   }
+// }//tablet
+// @media #{$media-small-tablet}{
+//   body{
+//     background: teal;
+//   }
+// }//tablet
+
+// @media #{$media-mobile}{
+//   body{
+//     background: teal;
+//   }
+// }//mobile
+
+// @media #{$media-mobile-sm}{
+//   body{
+//     background: teal;
+//   }
+// }//mobile-sm
